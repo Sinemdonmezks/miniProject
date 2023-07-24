@@ -1,0 +1,42 @@
+server:
+  port: 8390
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: root
+    url: jdbc:postgresql://localhost:5432/miniproject
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#    security:
+#      whiteList: /swagger-ui/*, /api/v1/user/*
+#      secret: SecretKeyToGenJWTs
+#      tokenPrefix: 'Bearer '
+#      whiteList:
+#        /v3/api-docs/*,
+#        /v3/api-docs, /swagger-ui/*,
+#        /configuration/ui ,
+#        /configuration/security ,
+#        /webjars/** ,
+#        /error ,
+#        /actuator/* ,
+#        /websocket ,
+#        /sign-up,
+#        /,
+#        /api/v1/user/send-reset-password-mail,
+#        /api/v1/user/change-password-token
+
+#spring.data.mongodb:
+#      host: cluster0.qdsimjl.mongodb.net
+#      port: 27017
+#      username: sinemdonmez
+#      password: Kariyer16!
+#      database: miniprojectMDB
+#      authentication-database: admin
+#      keepAlive: 100
+#      connectTimeoutMS: 30000
+
